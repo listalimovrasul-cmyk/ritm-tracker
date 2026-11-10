@@ -1,0 +1,7 @@
+{
+  "name": "ritm-local",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Автономный личный трекер тазового дна, без сервера данных и зависимостей"
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5f7f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121b19" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Ритм">
+  <meta name="description" content="Личная практика тазового дна. Тренировки и дневник, которые остаются на вашем устройстве.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Ритм — личная практика</title>
+  <link rel="icon" href="./icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a href="#today" class="brand" aria-label="Ритм, главная"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>ритм<span class="brand-dot">.</span></span></a>
+      <span class="local-badge"><span class="status-dot" aria-hidden="true"></span>Только на устройстве</span>
+    </header>
+    <main id="main" tabindex="-1"><div class="loading-card" role="status">Открываю локальный дневник…</div></main>
+    <footer class="privacy-footer">Без аккаунта. Без аналитики. В вашем ритме.</footer>
+    <nav class="tabs" aria-label="Разделы приложения">
+      <button type="button" data-tab="today"><span data-icon="sun"></span><span>Сегодня</span></button>
+      <button type="button" data-tab="diary"><span data-icon="book"></span><span>Дневник</span></button>
+      <button type="button" data-tab="plan"><span data-icon="sliders"></span><span>План</span></button>
+      <button type="button" data-tab="guide"><span data-icon="leaf"></span><span>Техника</span></button>
+      <button type="button" data-tab="data"><span data-icon="archive"></span><span>Данные</span></button>
+    </nav>
+  </div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <dialog id="trainer" class="trainer-dialog" aria-labelledby="trainer-title"></dialog>
+  <noscript><p>Для приложения нужен JavaScript. Все скрипты входят в его файлы; внешние библиотеки не загружаются.</p></noscript>
+</body>
+</html>

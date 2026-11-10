@@ -1,0 +1,7 @@
+# Local medical backups must never be committed.
+ritm-*.json
+*.ics
+node_modules/
+.DS_Store
+playwright-report/
+test-results/
